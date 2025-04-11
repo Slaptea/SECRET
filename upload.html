@@ -1,0 +1,14 @@
+<!-- upload.html -->
+<form id="uploadForm">
+  <input type="file" id="fileInput">
+  <button type="submit">Yükle</button>
+</form>
+
+<script>
+  document.getElementById('uploadForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const file = document.getElementById('fileInput').files[0];
+    // Dosya yükleme işlemleri burada gerçekleştirilir
+    alert('Dosya yüklendi: ' + file.name);
+  });
+</script>

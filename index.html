@@ -1,0 +1,18 @@
+<!-- login.html -->
+<form onsubmit="return checkPassword()">
+  <input type="password" id="adminPassword" placeholder="Password">
+  <button type="submit">Enter</button>
+</form>
+
+<script>
+  function checkPassword() {
+    const password = document.getElementById('adminPassword').value;
+    if (password === 'Password') {
+      window.location.href = 'upload.html';
+      return false;
+    } else {
+      alert('Yanlış şifre!');
+      return false;
+    }
+  }
+</script>
